@@ -1,0 +1,14 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: test-app
+  description: Test App
+  tags:
+    - go
+  annotations:
+      backstage.io/kubernetes-id: test-app
+spec:
+  type: service
+  lifecycle: production
+  owner: user:guest
+  system: audio-playback
